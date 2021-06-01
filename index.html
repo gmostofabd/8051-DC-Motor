@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+	<head>
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="shortcut icon" href="https://github.com/gmostofabd/melab-store/blob/main/Images/melab-bd_logo.jpg?raw=true" type="image/x-icon">
+		
+		<script src="https://github.com/gmostofabd/melab-store/blob/main/sharedfooter.js" type="text/javascript" defer></script>
+	  
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		
+		<script>
+			  $(function(){
+				  $('#sidebar1').load("assets/sidebar1.html");
+			  });
+		  </script>
+	  
+		<meta charset="utf-8">
+		<meta name="Keywords" content="Microcontroller,8051,Assembly,Programming,Circuits, Code,Proteus">
+			
+		<!--Facebook Open graph Mete Tags-->
+		<meta property="og:url"                content="https://gmostofabd.github.io/dc-motor-8051/" />
+		<meta property="og:type"               content="article" />
+		<meta property="og:title"              content="Exp. 08 : 8051 DC Motor" />
+		<meta property="og:description"        content="DC Motor interfacing and control using 8051 Microcontroller" />
+		<meta property="og:image"              content="assets/images/DCMOTOR_80501_Ckt.png" />
+		
+		<title>8051 DC Motor</title>
+	  </head>
+	
+
+
+
+
+<body>
+
+	<div id="header_common"><img src="https://github.com/gmostofabd/melab-store/blob/main/Images/8051_Tutorial_Banner.png?raw=true" alt="common_banner"></div>
+	<div id="topic_container"><h2 style="color:blue;">Topic : DC Motor Interfacing with 8051 Microcontroller</h2></div>
+
+
+    <table align = center width=1000 height=1000  bgcolor= white>
+	<tr>
+
+	<td width=800 align=center valign=top style="padding-left: 10px; padding-right: 10px;">
+		
+		<h3 align=left>Introduction:</h3>
+		<p style="text-align:justify;">
+			Interfacing DC Motor to a microcontroller forms an essential 
+			part in designing embedded robotic projects. 
+			This article shows how to interface a small DC motor with any 
+			microcontroller. Before working with DC motors we will take a 
+			look at some basic techniques for controlling them.	<br><br>
+
+			DC motors normally have just two leads, one positive and one 
+			negative. If you connect these two leads directly to a battery, 
+			the motor will rotate. If you switch the leads, the motor will 
+			rotate in the opposite direction. Driving electromotors needs 
+			a high current. In addition, spinning direction and speed are 
+			two important parameters to be controlled. These requirements 
+			can be handled by using a microcontroller or similar. But 
+			there is a problem; Microcontrollers cannot provide enough 
+			current to run the motor and if you connect the motor to the 
+			microcontroller directly, you may damage the microcontroller. 
+			The perfect solution is to use a motor driver circuit in 
+			between the microcontroller and the DC motor.
+			<br><br>
+		</p>
+	
+    <div class="box_70">
+      <img src="assets/images/learn_arduino_dc_motor.jpg"/>
+    </div>
+
+	<h3>DC Motor Features:</h3>
+		<ul class="inside">
+		  <li>Runs on DC power or AC line voltage with a rectifier.</li>
+		  <li>No need for a drive circuit when running at constant speed.</li>
+		  <li>Able to operate at high speeds (1,000 to 5,000 rpm.)</li>
+		  <li>High-efficiency design (60-75\% Approx).</li>
+		  <li>High starting torque.</li>
+		  <li>Responsive and easy to use as speed and torque can be controlled by voltage.</li>
+		  <li>Can be divided into brushed and brushless DC motors.</li>
+		</ul>
+
+
+
+
+	<h3 align=left>Controlling a DC Motor:</h3>
+	<p align=justify>
+	In order to have a complete control over DC motor, we have 
+	to control its speed and rotation direction. The DC motor 
+	speed can be controlled by applying varying DC voltage; 
+	whereas the direction of rotation of the motor can be 
+	changed by reversing the direction of current through it. 
+	This can be achieved by combining these two common 
+	techniques.
+	</p>
+	
+
+
+
+
+	<blockquote>
+	<p align=justify>
+	<strong>PWM (Pulse Width Modulation) –</strong>
+	For controlling speed <br><br>
+	It is a technique where average value of the input 
+	voltage is adjusted by sending a series of ON-OFF 
+	pulses.<br><br>
+	The average voltage is proportional to the width 
+	of the pulses known as Duty Cycle. The higher the 
+	duty cycle, the greater the average voltage being 
+	applied to the dc motor(High Speed) and the lower 
+	the duty cycle, the less the average voltage being 
+	applied to the dc motor(Low Speed).
+	</p>
+	</blockquote>
+
+      <img align=center src="assets/images/pwm-duty-cycle-1.jpg" style="width:400px;height:250px;"/>
+
+
+
+
+	<blockquote>
+	<p align=justify>
+	<strong>H-Bridge –</strong>
+	For controlling rotation direction<br><br>
+	An H bridge is an electronic circuit which allows 
+	the voltage to be flown in either direction. 
+	H-bridges are used in many different applications, 
+	one of the most common being to control motors in 
+	robots. It is called an H-bridge because it uses 
+	four transistors connected in such a way that the 
+	schematic diagram looks like an "H."<br><br>
+	
+    Closing two particular switches at the same time reverses 
+	the polarity of the voltage applied to the motor. 
+	This causes change in spinning direction of the motor.
+	</p>
+	</blockquote>
+
+	<img align=center src="assets/images/Hbridge-w600.png" style="width:500px;height:200px;"/>
+
+	<p align=justify>
+
+	You can use discrete transistors to make this circuit, but for 
+	this tutorial, we will be using the L298 H-Bridge IC. The L298 
+	can control the speed and direction of DC motors and stepper 
+	motors and can control two motors simultaneously. Its current 
+	rating is 2A for each motor. At these currents, however, you 
+	will need to use heat sinks.
+
+	</p>
+
+
+	<h3 align=left>Motor Driver L293D</h3>
+
+
+    <div class="box"><img src="assets/images/L293-pinout.png"/></div>
+
+	<h3>L293D Features:</h3>
+		<ul class="inside">
+		  <li>Can be used to run Two DC motors with the same IC.</li>
+		  <li>Wide Supply-Voltage Range: 4.5 V to 36 V.</li>
+		  <li>Separate Input-Logic Supply.</li>
+		  <li>Internal ESD Protection.</li>
+		  <li>High-Noise-Immunity Inputs.</li>
+		  <li>Constant Current 600 mA.</li>
+		  <li>Peak Output Current 1.2 A Per Channel.</li>
+		  <li>Output Clamp Diodes for Inductive Transient. Suppression (L293D)</li>
+		  <li>Automatic Thermal shutdown is available.</li>
+		  <li>Available in 16-pin DIP, TSSOP, SOIC packages.</li>
+		</ul>
+		<br>
+
+	<h3 align=left>Circuit Diagram :</h3>
+
+    <div class="box_ckt"><img src="assets/images/DCMOTOR_80501_Ckt.png"/></div>
+	<div class="capt_cont">Fig: DC Motor control circuit using L293D and 8051 Microcontroller.</div>
+
+	<h3 align=left>Circuit Discussion :</h3>
+		<p align=justify>
+		The circuit shown below is of an 8051 based  bi directional 
+		motor  
+		whose direction can be controlled using 2 push button 
+		switches. The circuit is very similar to the previous one 
+		except  for the  two push button switches . These pushbutton
+		switches are interfaced to  P0rt 3 of the microcontroller. 
+		Resistors R2 and R3 are the pull down resistors for P3.0 
+		and 3.1 respectively.
+		</p>
+
+
+	<div id="rcorners2a" align=center></div>
+
+	<h3>Assembly Program : dc_motor_8051.asm</h3>
+	<div class="prog_cont">
+	  <embed type="text/html" src="codes/DCMOTOR_8051.asm"  width="500" height="500">
+	</div>
+
+
+	<h3 align=left>Code Discussion :</h3>
+	<p align=justify>
+	jump if not equal instruction. In simple words the CJNE 
+	instruction compares two operands and jump to a predefined 
+	LABEL  if the operands are not equal. If the two operands 
+	are equal nothing happens and the next instruction is 
+	executed.  Whenever push button S2 is pressed the status 
+	of P3 will be 00000001B .This status is moved to accumulator
+	A and compared with 00000001B using the CJNE instruction. 
+	Both operands are equal means S2 is pressed and the next 
+	instruction (MOV P1,\#00000001B) which makes the motor run 
+	clockwise is executed. If the operands are not equal that 
+	means the S2 is not pressed and the controller jumps to 
+	LABEL1 which is to check the S3. To check S3, status of 
+	P3 is moved to A again  and it is compared with 00000010B 
+	using the CJNE instruction. Both operands are equal means 
+	the S3 is pressed and the next 
+	instruction (MOV P1,\#00000010B) which makes the motor 
+	run anti clockwise is executed. Both operands are not 
+	equal means S3 is not pressed and the controller goes 
+	to check  S2 again and this cycle is repeated.
+	</p>
+
+	
+	</td>
+
+	<td valign=top>
+		<div class="vdo_lst_cont">
+			<h3>Lesson Video</h3>
+			<iframe width="186" height="130"	src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+		</div>
+		  
+		<div id="sidebar1"></div>
+	</td>
+
+
+	</tr>
+         
+      </table>
+
+
+
+
+      <table width=1000 height=50 align= center border="1">
+		<tr>
+			<td>Prev topic: Keypad Interfacing with 8051</td>
+			<td>Next topic: Stepper Mottor interfacing with 8051</td>
+		</tr>
+       </table>
+
+
+
+	<div id="footer_common"></div>
+
+</body>
+
+
+
+
+
+
+
+
+</html>
