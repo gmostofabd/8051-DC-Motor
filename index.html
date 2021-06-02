@@ -42,22 +42,28 @@
 	<td width=800 align=center valign=top style="padding-left: 10px; padding-right: 10px;">
 		
 	<h3>Introduction:</h3>
-			<blockquote>
+		<blockquote>
 			<p>
-				Interfacing DC Motor to a microcontroller forms an essential 
+				A DC motor (Direct Current motor) is the most common type of motor. 
+				 Interfacing DC Motor to a microcontroller forms an essential 
 				part in designing embedded robotic projects. 
 				This article shows how to interface a small DC motor with any 
 				microcontroller. Before working with DC motors we will take a 
-				look at some basic techniques for controlling them.
+				look at some basic techniques for controlling them. There are 
+				several types of DC motors, but here we will use a simple brushed DC motor.
 			</p>
-	    		</blockquote>
-				<div class="box_70"><img src="assets/images/learn_arduino_dc_motor.jpg"/></div>
-			<blockquote>
+		</blockquote>
+	<h3>Hardware Discussion : DC Motor</h3>
+
+		<div class="box_70"><img src="assets/images/learn_arduino_dc_motor.jpg"/><span class="capt_cont">Fig: DC Motor</span></div>
+
+		<blockquote>
 			<p>
 				DC motors normally have just two leads, one positive and one 
 				negative. If you connect these two leads directly to a battery, 
 				the motor will rotate. If you switch the leads, the motor will 
-				rotate in the opposite direction. Driving electromotors needs 
+				rotate in the opposite direction. 
+				<br><br> Driving electromotors needs 
 				a high current. In addition, spinning direction and speed are 
 				two important parameters to be controlled. These requirements 
 				can be handled by using a microcontroller or similar. But 
@@ -67,7 +73,7 @@
 				The perfect solution is to use a motor driver circuit in 
 				between the microcontroller and the DC motor.
 			</p>
-			</blockquote>
+		</blockquote>
 	
     	
 
@@ -136,10 +142,10 @@
 		<blockquote>
 			<p>
 				You can use discrete transistors to make this circuit, but for 
-				this tutorial, we will be using the L298 H-Bridge IC. The L298 
+				this tutorial, we will be using the L293D H-Bridge IC. The L293D 
 				can control the speed and direction of DC motors and stepper 
 				motors and can control two motors simultaneously. Its current 
-				rating is 2A for each motor. At these currents, however, you 
+				rating is 1.2A for each motor. At these currents, however, you 
 				will need to use heat sinks.
 			</p>
 		</blockquote>
@@ -192,10 +198,12 @@
 			</p>
 		</blockquote>
 
+
 	<h3>Assembly Program : dc_motor_8051.asm</h3>
 		<div class="prog_cont">
 			<embed type="text/html" src="codes/DCMOTOR_8051.asm"  width="500" height="500">
 		</div>
+
 
 	<h3 align=left>Code Discussion :</h3>
 		<blockquote>
@@ -221,6 +229,8 @@
 				to check  S2 again and this cycle is repeated.
 			</p>
 		</blockquote>
+
+	
 	</td>
 
 	<td valign=top>
@@ -234,7 +244,9 @@
 
 
 	</tr>
+         
       </table>
+
 
       <table width=1000 height=50 align= center border="1">
 		<tr>
@@ -242,9 +254,9 @@
 			<td>Next topic: Stepper Mottor interfacing with 8051</td>
 		</tr>
        </table>
-
 	<div id="footer_common"></div>
 
 </body>
 
 </html>
+
