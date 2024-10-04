@@ -110,6 +110,10 @@ END
 
 # ⚙️ **Understanding DC Motor Operation and Speed Control** ⚙️
 
+<p align="center">
+<img src="https://github.com/gmostofabd/8051-DC-Motor/blob/13734f08e61c21d94a2f70d98c2f3ac40d3694ec/assets/images/dcmotor1.jpg?raw=true" alt="DC Motor" alt="AT89C51 DC Motor Circuit" width="30%">
+</p>
+
 DC motors are integral in modern **electronics** and **robotics** due to their simplicity, **efficiency**, and precise **control**. This guide explores the core operation principles of DC motors and the most common speed control techniques.
 
 ---
