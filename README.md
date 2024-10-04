@@ -113,32 +113,13 @@ DC motors are integral in modern **electronics** and **robotics** due to their s
 
 ---
 
-### 🚀 **What are DC Motors?**
-
-Like **AC motors**, **DC motors** convert electrical energy into mechanical energy. However, they operate on **DC power**, which is **non-sinusoidal** and **unidirectional**.
-
-<br/>
-<br/>
-<br/>
-<br/>
-
----
-
 ### 🚀 **Basic Construction**
-All DC motors share these essential components:
 
-- **Rotor** (also known as the armature): The part that rotates.
-- **Stator**: The stationary part providing the magnetic field.
-- **Commutator**: Can be **brushed** or **brushless**, depending on the motor type.
-- **Field Magnets**: Produce the magnetic field that interacts with the rotor.
+| **DC Motor Components** | **Components Description** |
+| -----------------------| ---------------------------|
+| <p align="center"><img src="https://github.com/gmostofabd/8051-DC-Motor/blob/13734f08e61c21d94a2f70d98c2f3ac40d3694ec/assets/images/dcMotorComponents.png?raw=true" alt="DC Motor Components" style="max-width: 100%; height: auto;"></p> | - **Rotor (Armature)**: The rotating part of the motor. <br> - **Stator**: The stationary part, producing the magnetic field. <br> - **Commutator**: Can be **brushed** or **brushless**, depending on the motor type. <br> - **Field Magnets**: Create the magnetic field that interacts with the rotor. <br><br> DC motors operate based on the **interaction** between the magnetic fields of the **rotor** and the **stator**. |
 
-In practice, DC motors operate through **interactions** between the **rotor's magnetic field** and the **stator's magnetic field**.
-<br/>
-<br/>
-<br/>
-<br/>
 
----
 
 ### 🚀 **Operating Principle**
 DC motors operate on **Faraday’s Law of Electromagnetism**, where a **current-carrying conductor** in a **magnetic field** experiences a force. This is governed by **Fleming’s Left-Hand Rule** for electric motors, stating that the direction of motion is perpendicular to both the current and magnetic field.
@@ -158,6 +139,11 @@ DC motors operate on **Faraday’s Law of Electromagnetism**, where a **current-
 ---
 
 ### 🚀 **Why Speed Control of a DC Motor is Important?**
+
+<p align="center">
+  <img src="https://github.com/gmostofabd/8051-DC-Motor/blob/13734f08e61c21d94a2f70d98c2f3ac40d3694ec/assets/images/dcmotor2.png" alt="AT89C51 DC Motor Circuit" width="40%">
+</p>
+
 Controlling the speed of a DC motor is essential in numerous applications. For instance, in **conveyor systems**, the motor may need slow speeds for loading and faster speeds for transferring materials. **Precise speed regulation** enhances the performance and longevity of the motor, while reducing mechanical stress and ensuring **energy efficiency**.
 
 ### 🚀 **Benefits of Speed Control:**
