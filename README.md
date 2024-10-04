@@ -82,56 +82,33 @@ DELAY_LOOP:
 END
 
 ```
-# ⚙️ Understanding DC Motor Operation and Speed Control ⚙️
 
-DC motors are widely used in electronics and robotics due to their ease of control and efficiency. In this guide, we will explore the fundamental modes of operation and techniques to regulate the speed of DC motors.
+
+
+<p align="center">
+  <img src="https://github.com/gmostofabd/8051-DC-Motor/blob/feca7ea1dd92f3ef45aafdb5c30a1a3f59c8b644/assets/images/dcmotor1.jpg" alt="AT89C51 DC Motor Circuit" width="70%">
+</p>
+
+
+
+
+
 
 ---
 
-### 🚀  Introduction
-
-A DC Motor and Phidgets DC Motor Controller
-DC Motors are the simplest way to turn electrical power into physical motion.
-
-They can be found in all types of applications, from power tools, to remote control cars, to large industrial machinery.
 
 
 
+# ⚙️ **Understanding DC Motor Operation and Speed Control** ⚙️
 
-### 🚀  What are DC Motors?
-Like AC motors, DC motors also convert electrical energy into mechanical energy. Their operation is the reverse of a DC generator which produces an electric current. Unlike AC motors, DC motors operate on DC power–non-sinusoidal, unidirectional power. 
+DC motors are integral in modern **electronics** and **robotics** due to their simplicity, **efficiency**, and precise **control**. This guide explores the core operation principles of DC motors and the most common speed control techniques.
 
+---
 
+### 🚀 **Introduction**
+**DC Motors** convert electrical power into mechanical motion and are used in numerous applications, from **remote-controlled cars** to **industrial machines**. They operate using **direct current (DC)**, unlike **AC motors**, and are ideal for **variable speed** applications.
 
-### 🚀  Basic Construction
-Although DC motors are designed in various ways, they all contain the following basic parts:
-
-Rotor (the part of the machine that rotates; also known as the “armature”)
-Stator (the field windings, or “stationary” part of the motor)
-Commutator (can be brushed or brushless, depending on the motor type)
-Field magnets (provide the magnetic field that turns an axle connected to the rotor)
-In practice, DC motors work based on interactions between magnetic fields produced by a rotating armature and that of the stator or fixed component.
-
- 
-
-### 🚀  Operating Principle
-DC motors operate on Faraday’s principle of electromagnetism which states that a current-carrying conductor experiences a force when placed in a magnetic field. According to Fleming’s “Left-hand rule for electric motors,” the motion of this conductor is always in a direction perpendicular to the current and the magnetic field. 
-
-Mathematically, we can express this force as F = BIL (where F is force, B is the magnetic field, I stand for current, and L is the length of the conductor). 
-
- 
-
-
-
-### 🚀  Why Speed Control of a DC Motor is Important?
-By allowing flexible adjustment of rotational speed, DC motors with speed control can meet the varying throughput demands in industrial machines. For example, conveyor motors may require slow speeds for loading and higher speeds for transfers. Efficient speed regulation also finds applications in robotics, CNC machines, medical equipment, electric vehicles, and more. It enables smooth transitions without sudden jerks, reducing wear and mechanical stresses. Precise control over velocity also ensures high-quality output and repeatability in operations.
-
-### 🚀  Speed control of a DC motor is vital for several reasons:
-
-Precision in Applications: Many applications require precise speed control for efficient operation.
-Energy Efficiency: Proper speed control can lead to significant energy savings.
-Enhanced Performance: Adjusting speed ensures the motor performs optimally under varying loads.
-Extended Motor Life: Controlled speed reduces wear and tear, prolonging the motor's lifespan
+---
 
 
 
@@ -140,47 +117,151 @@ Extended Motor Life: Controlled speed reduces wear and tear, prolonging the moto
 
 
 
-## 🎯 **Key Concepts**
+
+
+
+
+
+### 🚀 **What are DC Motors?**
+Like **AC motors**, **DC motors** convert electrical energy into mechanical energy. However, they operate on **DC power**, which is **non-sinusoidal** and **unidirectional**.
+
+---
+
+### 🚀 **Basic Construction**
+All DC motors share these essential components:
+
+- **Rotor** (also known as the armature): The part that rotates.
+- **Stator**: The stationary part providing the magnetic field.
+- **Commutator**: Can be **brushed** or **brushless**, depending on the motor type.
+- **Field Magnets**: Produce the magnetic field that interacts with the rotor.
+
+In practice, DC motors operate through **interactions** between the **rotor's magnetic field** and the **stator's magnetic field**.
+
+---
+
+### 🚀 **Operating Principle**
+DC motors operate on **Faraday’s Law of Electromagnetism**, where a **current-carrying conductor** in a **magnetic field** experiences a force. This is governed by **Fleming’s Left-Hand Rule** for electric motors, stating that the direction of motion is perpendicular to both the current and magnetic field.
+
+**Mathematically**: 
+\[ F = BIL \]
+- **F**: Force
+- **B**: Magnetic field strength
+- **I**: Current
+- **L**: Length of the conductor
+
+---
+
+### 🚀 **Why Speed Control of a DC Motor is Important?**
+Controlling the speed of a DC motor is essential in numerous applications. For instance, in **conveyor systems**, the motor may need slow speeds for loading and faster speeds for transferring materials. **Precise speed regulation** enhances the performance and longevity of the motor, while reducing mechanical stress and ensuring **energy efficiency**.
+
+### 🚀 **Benefits of Speed Control:**
+- **Precision**: Ensures efficient operation in critical applications.
+- **Energy Savings**: Reduces power consumption when appropriate.
+- **Optimized Performance**: Allows for adjustments in response to varying loads.
+- **Extended Lifespan**: Reduces wear and tear on the motor, prolonging its life.
+
+---
+
+## 🎯 **Key Speed Control Concepts**
 
 ### 1. 🔋 **Voltage Control**
-By adjusting the **applied voltage**, you can control the speed of a DC motor. A higher voltage increases speed, while reducing voltage slows it down.
+By adjusting the **applied voltage**, you can directly control the motor speed. A higher voltage results in increased speed, while a lower voltage reduces it.
 
 ### 2. ⚡ **Pulse Width Modulation (PWM)**
-PWM is a highly efficient method for controlling the speed of DC motors. It works by rapidly switching the power on and off, adjusting the **duty cycle** to change the motor's speed without wasting energy.
-
-- 💡 **Higher Duty Cycle**: More power, higher speed.
-- 💡 **Lower Duty Cycle**: Less power, lower speed.
+**PWM** is an efficient way to control DC motor speed by quickly switching the power on and off. Adjusting the **duty cycle** alters the motor's speed without wasting energy:
+- **Higher Duty Cycle**: More power, higher speed.
+- **Lower Duty Cycle**: Less power, lower speed.
 
 ### 3. 🔄 **Current Control**
-In **current control**, the motor's torque is regulated by managing the current flowing through it. This is particularly useful in applications requiring precise torque control, such as robotic arms.
+Controlling the **current** allows for precise **torque regulation**, which is especially useful in applications requiring high levels of accuracy, such as **robotics**.
 
 ---
 
 ## 📉 **Speed Regulation Techniques**
 
-Here are the most common techniques for regulating the speed of DC motors:
-
-1. **Variable Voltage Supply**: Adjusting the input voltage using variable resistors or power electronics.
-2. **PWM Speed Control**: Modifying the duty cycle to efficiently manage speed without overheating the motor.
-3. **Feedback Systems**: Using sensors like encoders or tachometers to dynamically adjust motor speed for greater precision.
+1. **Variable Voltage Supply**: Adjusting input voltage using **resistors** or **power electronics**.
+2. **PWM Control**: Efficiently managing speed without overheating.
+3. **Feedback Systems**: Using **sensors** like **encoders** or **tachometers** for dynamic speed adjustment.
 
 ---
 
-## 🛠️ **Applications**
+## 🛠️ **Applications of DC Motors**
 
-- 🏎️ **Robotics**: Smooth control of wheel and joint motors.
-- 🚁 **Drones**: Precise speed regulation for stability and maneuverability.
-- 🚗 **Electric Vehicles**: Efficient speed control for energy conservation.
+- 🏎️ **Robotics**: Smooth control of motor speeds for wheels and joints.
+- 🚁 **Drones**: Precise speed regulation for stability.
+- 🚗 **Electric Vehicles**: Energy-efficient speed control for motors.
 
 ---
+
+
+
+## ⚗️ **Experiments Gallery**
+
+<table>
+  <tr>
+    <td align="center" style="vertical-align: bottom;">
+      <a href="https://gmostofabd.github.io/8051-LED/">
+        <img src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/aceb06c4975f29b3eb4b97681455b6ac34920d15/8051%20LED/assets/images/LED_8051_Ckt.png?raw=true" alt="LED Blink" style="max-width: 100%; height: auto;">
+      </a>
+      <p><strong>Exp. 1: 8051 LED</strong></p>
+      <p>This experiment demonstrates how to blink an LED using the 8051 microcontroller.</p>
+    </td>
+    <td align="center" style="vertical-align: center;">
+      <a href="https://gmostofabd.github.io/8051-Push-Button/">
+        <img src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/aceb06c4975f29b3eb4b97681455b6ac34920d15/8051%20SSD%20Up%20Dn%20Counter/UP_DN_COUNTER.png?raw=true" alt="Push Button Interfacing" style="max-width: 100%; height: auto;">
+      </a>
+      <p><strong>Exp. 2: Push Button Interfacing</strong></p>
+      <p>Learn how to interface a push button with the 8051 to control outputs.</p>
+    </td>
+    <td align="center" style="vertical-align: bottom;">
+      <a href="https://gmostofabd.github.io/8051-7Segment/">
+        <img src="https://github.com/gmostofabd/melab-store/blob/main/8051%20Examples%20Simulation%20ScrnShots/8051%20Traffic%20Lights2.png?raw=true" alt="Seven Segment Display" style="max-width: 100%; height: auto;">
+      </a>
+      <p><strong>Exp. 3: Seven Segment Display</strong></p>
+      <p>Discover how to interface and display numbers on a seven-segment display.</p>
+    </td>
+  </tr>
+</table>
+
+
+| | | |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/aceb06c4975f29b3eb4b97681455b6ac34920d15/8051%20DOT%20Matrix%20LED/8051%20DOT%20Matrix%20LED.png">  8051 LED |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/aceb06c4975f29b3eb4b97681455b6ac34920d15/8051%20LCD/AT89C51_8_BIT_LCD_(RW_PIN_TO_GND).png"> 8051 Push Button | <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/8343a9874e5530a658bd2e023b0df2a4dee0359f/8051%20Stepper%20Motors/8051%20Stepper%20Motor.png?raw=true"> 8051 Stepper Motor|
+|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/aceb06c4975f29b3eb4b97681455b6ac34920d15/AD0804%20LED/Schematic.png?raw=true">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/8343a9874e5530a658bd2e023b0df2a4dee0359f/8051%20Basic%20Calculator/8051%20Basic%20calculator.png?raw=true">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/melab-store/blob/main/8051%20Examples%20Simulation%20ScrnShots/8051%20L293D%20DC%20Motor.png?raw=true">|
+|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/8343a9874e5530a658bd2e023b0df2a4dee0359f/8051%20Stepper%20Motors/8051%20Stepper%20Motor.png?raw=true">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/aceb06c4975f29b3eb4b97681455b6ac34920d15/8051%20LCD/AT89C51_8_BIT_LCD_(RW_PIN_TO_GND).png?raw=true">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/aceb06c4975f29b3eb4b97681455b6ac34920d15/8051%20DOT%20Matrix%20LED/8051%20DOT%20Matrix%20LED.png?raw=true">|
+
+
+<br/>
+<br/>
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 📘 **Further Reading**
 - [DC Motor Basics](https://example-link.com/dcmotor)
-- [PWM Techniques](https://example-link.com/pwm)
+- [Pulse Width Modulation Techniques](https://example-link.com/pwm)
 
 ---
 
-🌟 **Explore the fascinating world of DC motors and unlock endless possibilities in electronics and robotics!**
+🌟 **Explore the fascinating world of DC motors** and unlock endless possibilities in electronics and robotics!
 
 🔗 **Follow Us for More Tutorials:**
 - [Website](https://melabBD.com)
@@ -189,74 +270,24 @@ Here are the most common techniques for regulating the speed of DC motors:
 
 ---
 
+### 🚀 **Torque, Current, and Power**
+DC motors draw more **current** under load, and their **torque** is directly proportional to the electrical current flowing through them. It's essential to account for these parameters to ensure optimal motor performance and avoid overheating.
 
-### 🚀  Conclusion
-In conclusion, different speed control techniques leverage the theoretical relationships between motor parameters and speed to precisely regulate DC motor rotations. Proper method selection based on motor type and application ensures optimized performance. High-fidelity speed control opens up diverse industrial applications for electric drive systems.
+**Thermal Management** is crucial, as overloaded motors can **stall** and overheat. Devices like **Phidgets DC Motor Controllers** offer **current-limiting features** to prevent motor damage and ensure safe operation.
 
-This article summarises all the information related to Speed control methods of dc motor, which helps in propelling your preparation for various AE/JE and ESE examinations. You can visit the Testbook app to keep yourself updated with all the exam-oriented information related to the upcoming examination, like SSC JE, GATE, ESE, RRB JE, and state AE/JE Exams.
+### 🚀 **Braking**
+DC motors can also resist movement through **electromotive force (EMF)**, a phenomenon used for braking. By connecting the motor terminals together, the motor resists fast rotation, providing a braking effect.
 
-
-
-
-### 🚀  Types of DC Motors
-DC motors fall into different categories, depending on their construction. The most common types include brushed or brushless, permanent magnet, series, and parallel.  
-
- 
-
-### 🚀  Brushed and Brushless Motors
-A brushed DC motor utilizes a pair of graphite or carbon brushes which are for conducting or delivering current from the armature. These brushes are usually kept in close proximity to the commutator. Other useful functions of brushes in dc motors include ensuring sparkless operation, controlling the direction of current during rotation, and keeping the commutator clean. 
-
-Brushless DC motors do not contain carbon or graphite brushes. They usually contain one or more permanent magnets that spin around a fixed armature. In place of brushes, brushless DC motors utilize electronic circuits to control the direction of rotation and speed. 
-
- 
-
-### 🚀  Permanent Magnet Motors
-Permanent magnet motors consist of a rotor surrounded by two opposing permanent magnets. The magnets supply a magnetic field flux when dc is passed, which causes the rotor to spin in a clockwise or anti-clockwise direction, depending on the polarity. A major benefit of this type of motor is that it can operate at synchronous speed with a constant frequency, allowing for optimal speed regulation. 
-
- 
-
-### 🚀  Series-wound DC Motors
-Series motors have their stator (usually made of copper bars) windings and field windings (copper coils) connected in series. Consequently, the armature current and field currents are equal. High current flows directly from the supply into the field windings which are thicker and fewer than in shunt motors. The thickness of the field windings increases the load-carrying capacity of the motor and also produces powerful magnetic fields that give series DC motors a very high torque.
-
- 
-
-### 🚀  Shunt DC Motors
-A shunt DC motor has its armature and field windings connected in parallel. Owing to the parallel connection, both windings receive the same supply voltage, although they are excited separately. Shunt motors typically have more turns on the windings than series motors which creates powerful magnetic fields during operation. Shunt motors can have excellent speed regulation, even with varying loads. However, they usually lack the high starting torque of series motors. 
+---
 
 
 
-This feature allows you to set up your system so you only need to tell the motor where to go with a given speed and acceleration, and it will go there.
+### 🚀 **Conclusion**
+By utilizing appropriate **speed control techniques**, DC motors can provide **precise motion control** across various applications. Understanding the underlying principles and methods allows for **optimized performance**, **energy savings**, and **longer motor lifespan**. 
 
-### 🚀  Torque, Current and Power
-Now that we have covered the basics of using DC motors and how easily they can be controlled with Phidgets, we can cover more in-depth concerns, such as torque curves and power consumption.
+Whether you're working on **robotics**, **drones**, or **electric vehicles**, mastering DC motor speed control is key to unlocking their full potential.
 
+For detailed information on DC motor types, such as **Brushed** vs **Brushless Motors**, or motors like **Permanent Magnet** or **Shunt DC Motors**, check out the links provided above!
 
-A DC Motor Draws More Current Under Load
-A DC Motor’s torque is proportional to the electrical current flowing through it. The more current, the harder the motor pushes to get moving. A higher supply voltage will try to push more current, and allow a higher maximum torque for a given motor.
-
-As a DC motor spins faster, it begins trying to generate its own current to oppose the motion. So long as the motor is powered, this results in a reduced current driving the motor. Under no load, the motor will spin up to the point where this generated electromotive force (EMF) cancels out the supply, and the system consumes barely any power while spinning as fast as it can.
-
-As the motor gets loaded down, the motor slows allowing more current to flow and generating more torque to fight the load. This tendency of the motor to consume more current at low speeds means that the DC Motor will work harder when it’s weighed down, and when it’s starting up.
-
-
-Thermal Image of a Stalled DC Motor
-Once the motor is loaded down to the point it can no longer spin, it will consume as much current as it can, generating maximum torque, but potentially overheating in the process. Overloading an electric motor to this point is called a “stall” and should be avoided.
-
-To prevent problems caused by this kind of runaway current, Phidgets DC Motor Controllers have a current limiting feature. This can be useful in both preventing overheating and/or automatically limiting the available torque if desired.
-
-### 🚀  Braking
-
-A DC motor can be made to passively resist fast movement
-Another result of the electromotive forces (EMF) caused by the spinning motor is that by connecting the motor terminals together when it’s spinning, the motor will produce a current (and thus a force) opposing the rotation of the motor. This method of using the motor’s own rotation against itself is called braking.
-
-When braking, a faster rotation generates a higher EMF, resulting in a higher braking current, and the motor will brake harder when it’s spinning faster.
-
-A DC Motor that is not moving will generate no passive braking, as no motion results in no EMF being generated, and thus no current and no torque.
-
-
-A Phidgets DC Motor controller can be used to control the braking force applied by your DC motor.
-
-
-
-
+---
 
