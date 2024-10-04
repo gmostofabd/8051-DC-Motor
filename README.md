@@ -84,14 +84,23 @@ END
 ```
 
 
-
-<p align="center">
-  <img src="https://github.com/gmostofabd/8051-DC-Motor/blob/feca7ea1dd92f3ef45aafdb5c30a1a3f59c8b644/assets/images/dcmotor1.jpg" alt="AT89C51 DC Motor Circuit" width="70%">
-</p>
-
+<br/>
+<hr/>
+<br/>
 
 
 
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 ---
@@ -112,7 +121,7 @@ DC motors are integral in modern **electronics** and **robotics** due to their s
 
 
 
-
+https://github.com/gmostofabd/8051-DC-Motor/blob/13734f08e61c21d94a2f70d98c2f3ac40d3694ec/assets/images/dcMotorComponents.png
 
 
 
@@ -201,21 +210,21 @@ Controlling the **current** allows for precise **torque regulation**, which is e
   <tr>
     <td align="center" style="vertical-align: bottom;">
       <a href="https://gmostofabd.github.io/8051-LED/">
-        <img src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/aceb06c4975f29b3eb4b97681455b6ac34920d15/8051%20LED/assets/images/LED_8051_Ckt.png?raw=true" alt="LED Blink" style="max-width: 100%; height: auto;">
+        <img src="https://github.com/gmostofabd/8051-DC-Motor/blob/13734f08e61c21d94a2f70d98c2f3ac40d3694ec/assets/images/dcMotorComponents.png?raw=true" alt="LED Blink" style="max-width: 100%; height: auto;">
       </a>
       <p><strong>Exp. 1: 8051 LED</strong></p>
       <p>This experiment demonstrates how to blink an LED using the 8051 microcontroller.</p>
     </td>
     <td align="center" style="vertical-align: center;">
       <a href="https://gmostofabd.github.io/8051-Push-Button/">
-        <img src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/aceb06c4975f29b3eb4b97681455b6ac34920d15/8051%20SSD%20Up%20Dn%20Counter/UP_DN_COUNTER.png?raw=true" alt="Push Button Interfacing" style="max-width: 100%; height: auto;">
+        <img src="https://github.com/gmostofabd/8051-DC-Motor/blob/13734f08e61c21d94a2f70d98c2f3ac40d3694ec/assets/images/dcmotor1.jpg?raw=true" alt="Push Button Interfacing" style="max-width: 100%; height: auto;">
       </a>
       <p><strong>Exp. 2: Push Button Interfacing</strong></p>
       <p>Learn how to interface a push button with the 8051 to control outputs.</p>
     </td>
     <td align="center" style="vertical-align: bottom;">
       <a href="https://gmostofabd.github.io/8051-7Segment/">
-        <img src="https://github.com/gmostofabd/melab-store/blob/main/8051%20Examples%20Simulation%20ScrnShots/8051%20Traffic%20Lights2.png?raw=true" alt="Seven Segment Display" style="max-width: 100%; height: auto;">
+        <img src="https://github.com/gmostofabd/8051-DC-Motor/blob/13734f08e61c21d94a2f70d98c2f3ac40d3694ec/assets/images/dcGearMotor1.jpg?raw=true" alt="Seven Segment Display" style="max-width: 100%; height: auto;">
       </a>
       <p><strong>Exp. 3: Seven Segment Display</strong></p>
       <p>Discover how to interface and display numbers on a seven-segment display.</p>
@@ -226,7 +235,7 @@ Controlling the **current** allows for precise **torque regulation**, which is e
 
 | | | |
 |:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/aceb06c4975f29b3eb4b97681455b6ac34920d15/8051%20DOT%20Matrix%20LED/8051%20DOT%20Matrix%20LED.png">  8051 LED |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/aceb06c4975f29b3eb4b97681455b6ac34920d15/8051%20LCD/AT89C51_8_BIT_LCD_(RW_PIN_TO_GND).png"> 8051 Push Button | <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/8343a9874e5530a658bd2e023b0df2a4dee0359f/8051%20Stepper%20Motors/8051%20Stepper%20Motor.png?raw=true"> 8051 Stepper Motor|
+|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-DC-Motor/blob/13734f08e61c21d94a2f70d98c2f3ac40d3694ec/assets/images/dcMotorPrinciple1.gif">  8051 LED |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/aceb06c4975f29b3eb4b97681455b6ac34920d15/8051%20LCD/AT89C51_8_BIT_LCD_(RW_PIN_TO_GND).png"> 8051 Push Button | <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/8343a9874e5530a658bd2e023b0df2a4dee0359f/8051%20Stepper%20Motors/8051%20Stepper%20Motor.png?raw=true"> 8051 Stepper Motor|
 |<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/aceb06c4975f29b3eb4b97681455b6ac34920d15/AD0804%20LED/Schematic.png?raw=true">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/8343a9874e5530a658bd2e023b0df2a4dee0359f/8051%20Basic%20Calculator/8051%20Basic%20calculator.png?raw=true">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/melab-store/blob/main/8051%20Examples%20Simulation%20ScrnShots/8051%20L293D%20DC%20Motor.png?raw=true">|
 |<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/8343a9874e5530a658bd2e023b0df2a4dee0359f/8051%20Stepper%20Motors/8051%20Stepper%20Motor.png?raw=true">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/aceb06c4975f29b3eb4b97681455b6ac34920d15/8051%20LCD/AT89C51_8_BIT_LCD_(RW_PIN_TO_GND).png?raw=true">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/aceb06c4975f29b3eb4b97681455b6ac34920d15/8051%20DOT%20Matrix%20LED/8051%20DOT%20Matrix%20LED.png?raw=true">|
 
