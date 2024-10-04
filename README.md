@@ -97,7 +97,7 @@ END
 
 ---
 
-# ⚙️ **Understanding DC Motor Operation and Speed Control** ⚙️
+## ⚙️ **Understanding DC Motor Operation and Speed Control** ⚙️
 
 **DC Motors** convert electrical power into mechanical motion and are used in numerous applications, from **remote-controlled cars** to **industrial machines**. They operate using **direct current (DC)**, unlike **AC motors**, and are ideal for **variable speed** applications.
 
