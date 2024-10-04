@@ -1,7 +1,5 @@
 # ⚙️ **8051 DC Motor Interfacing**
 
-
-
 <p align="center">
   <img src="https://github.com/gmostofabd/8051-DC-Motor/blob/feca7ea1dd92f3ef45aafdb5c30a1a3f59c8b644/assets/images/DCMOTOR_80501_Ckt.png" alt="AT89C51 DC Motor Circuit" width="70%">
 </p>
@@ -53,8 +51,6 @@ This project was simulated using **Proteus Design Suite** to verify the DC motor
 
 ---
 
-
-
 ## 👨‍💻 **Code View**
 
 ```assembly
@@ -87,10 +83,6 @@ END
 <br/>
 <hr/>
 <br/>
-
-
-
-
 <br/>
 <br/>
 <br/>
@@ -105,38 +97,30 @@ END
 
 ---
 
-
-
-
 # ⚙️ **Understanding DC Motor Operation and Speed Control** ⚙️
+
+**DC Motors** convert electrical power into mechanical motion and are used in numerous applications, from **remote-controlled cars** to **industrial machines**. They operate using **direct current (DC)**, unlike **AC motors**, and are ideal for **variable speed** applications.
 
 <p align="center">
 <img src="https://github.com/gmostofabd/8051-DC-Motor/blob/13734f08e61c21d94a2f70d98c2f3ac40d3694ec/assets/images/dcmotor1.jpg?raw=true" alt="DC Motor" alt="AT89C51 DC Motor Circuit" width="30%">
 </p>
 
 DC motors are integral in modern **electronics** and **robotics** due to their simplicity, **efficiency**, and precise **control**. This guide explores the core operation principles of DC motors and the most common speed control techniques.
+<br/>
+<br/>
+<br/>
+<br/>
 
 ---
-
-### 🚀 **Introduction**
-**DC Motors** convert electrical power into mechanical motion and are used in numerous applications, from **remote-controlled cars** to **industrial machines**. They operate using **direct current (DC)**, unlike **AC motors**, and are ideal for **variable speed** applications.
-
----
-
-
-
-https://github.com/gmostofabd/8051-DC-Motor/blob/13734f08e61c21d94a2f70d98c2f3ac40d3694ec/assets/images/dcMotorComponents.png
-
-
-
-
-
-
-
-
 
 ### 🚀 **What are DC Motors?**
+
 Like **AC motors**, **DC motors** convert electrical energy into mechanical energy. However, they operate on **DC power**, which is **non-sinusoidal** and **unidirectional**.
+
+<br/>
+<br/>
+<br/>
+<br/>
 
 ---
 
@@ -149,6 +133,10 @@ All DC motors share these essential components:
 - **Field Magnets**: Produce the magnetic field that interacts with the rotor.
 
 In practice, DC motors operate through **interactions** between the **rotor's magnetic field** and the **stator's magnetic field**.
+<br/>
+<br/>
+<br/>
+<br/>
 
 ---
 
@@ -162,6 +150,11 @@ DC motors operate on **Faraday’s Law of Electromagnetism**, where a **current-
 - **I**: Current
 - **L**: Length of the conductor
 
+<br/>
+<br/>
+<br/>
+<br/>
+
 ---
 
 ### 🚀 **Why Speed Control of a DC Motor is Important?**
@@ -172,6 +165,10 @@ Controlling the speed of a DC motor is essential in numerous applications. For i
 - **Energy Savings**: Reduces power consumption when appropriate.
 - **Optimized Performance**: Allows for adjustments in response to varying loads.
 - **Extended Lifespan**: Reduces wear and tear on the motor, prolonging its life.
+<br/>
+<br/>
+<br/>
+<br/>
 
 ---
 
@@ -187,7 +184,10 @@ By adjusting the **applied voltage**, you can directly control the motor speed. 
 
 ### 3. 🔄 **Current Control**
 Controlling the **current** allows for precise **torque regulation**, which is especially useful in applications requiring high levels of accuracy, such as **robotics**.
-
+<br/>
+<br/>
+<br/>
+<br/>
 ---
 
 ## 📉 **Speed Regulation Techniques**
@@ -195,7 +195,10 @@ Controlling the **current** allows for precise **torque regulation**, which is e
 1. **Variable Voltage Supply**: Adjusting input voltage using **resistors** or **power electronics**.
 2. **PWM Control**: Efficiently managing speed without overheating.
 3. **Feedback Systems**: Using **sensors** like **encoders** or **tachometers** for dynamic speed adjustment.
-
+<br/>
+<br/>
+<br/>
+<br/>
 ---
 
 ## 🛠️ **Applications of DC Motors**
@@ -204,6 +207,10 @@ Controlling the **current** allows for precise **torque regulation**, which is e
 - 🚁 **Drones**: Precise speed regulation for stability.
 - 🚗 **Electric Vehicles**: Energy-efficient speed control for motors.
 
+<br/>
+<br/>
+<br/>
+<br/>
 ---
 
 
@@ -241,22 +248,13 @@ Controlling the **current** allows for precise **torque regulation**, which is e
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-DC-Motor/blob/13734f08e61c21d94a2f70d98c2f3ac40d3694ec/assets/images/dcmotor2.png">  8051 LED |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-DC-Motor/blob/13734f08e61c21d94a2f70d98c2f3ac40d3694ec/assets/images/learn_arduino_dc_motor.jpg"> 8051 Push Button | <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-DC-Motor/blob/13734f08e61c21d94a2f70d98c2f3ac40d3694ec/assets/images/pwm1.png?raw=true"> 8051 Stepper Motor|
 |<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/aceb06c4975f29b3eb4b97681455b6ac34920d15/AD0804%20LED/Schematic.png?raw=true">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/8343a9874e5530a658bd2e023b0df2a4dee0359f/8051%20Basic%20Calculator/8051%20Basic%20calculator.png?raw=true">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/melab-store/blob/main/8051%20Examples%20Simulation%20ScrnShots/8051%20L293D%20DC%20Motor.png?raw=true">|
-|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/8343a9874e5530a658bd2e023b0df2a4dee0359f/8051%20Stepper%20Motors/8051%20Stepper%20Motor.png?raw=true">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/aceb06c4975f29b3eb4b97681455b6ac34920d15/8051%20LCD/AT89C51_8_BIT_LCD_(RW_PIN_TO_GND).png?raw=true">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/aceb06c4975f29b3eb4b97681455b6ac34920d15/8051%20DOT%20Matrix%20LED/8051%20DOT%20Matrix%20LED.png?raw=true">|
+|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/8343a9874e5530a658bd2e023b0df2a4dee0359f/8051%20Stepper%20Motors/8051%20Stepper%20Motor.png?raw=true">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-Assembly-Programming-and-Proteus-Simulation/blob/aceb06c4975f29b3eb4b97681455b6ac34920d15/8051%20LCD/AT89C51_8_BIT_LCD_(RW_PIN_TO_GND).png?raw=true">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/gmostofabd/8051-DC-Motor/blob/13734f08e61c21d94a2f70d98c2f3ac40d3694ec/assets/images/dcMotorComponents.png?raw=true">|
 
 
 <br/>
 <br/>
 
 ---
-
-
-
-
-
-
-
-
-
 
 
 
@@ -272,6 +270,10 @@ Controlling the **current** allows for precise **torque regulation**, which is e
 - [DC Motor Basics](https://example-link.com/dcmotor)
 - [Pulse Width Modulation Techniques](https://example-link.com/pwm)
 
+<br/>
+<br/>
+<br/>
+<br/>
 ---
 
 🌟 **Explore the fascinating world of DC motors** and unlock endless possibilities in electronics and robotics!
@@ -281,6 +283,10 @@ Controlling the **current** allows for precise **torque regulation**, which is e
 - [YouTube](https://youtube.com/melabBD)
 - [GitHub](https://github.com/melabBD)
 
+<br/>
+<br/>
+<br/>
+<br/>
 ---
 
 ### 🚀 **Torque, Current, and Power**
@@ -290,6 +296,11 @@ DC motors draw more **current** under load, and their **torque** is directly pro
 
 ### 🚀 **Braking**
 DC motors can also resist movement through **electromotive force (EMF)**, a phenomenon used for braking. By connecting the motor terminals together, the motor resists fast rotation, providing a braking effect.
+
+<br/>
+<br/>
+<br/>
+<br/>
 
 ---
 
@@ -301,6 +312,11 @@ By utilizing appropriate **speed control techniques**, DC motors can provide **p
 Whether you're working on **robotics**, **drones**, or **electric vehicles**, mastering DC motor speed control is key to unlocking their full potential.
 
 For detailed information on DC motor types, such as **Brushed** vs **Brushless Motors**, or motors like **Permanent Magnet** or **Shunt DC Motors**, check out the links provided above!
+
+<br/>
+<br/>
+<br/>
+<br/>
 
 ---
 
